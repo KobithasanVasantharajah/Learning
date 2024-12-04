@@ -7,29 +7,30 @@ Welcome to my learning repository! This repository contains structured notes, ex
 ## 📂 Repository Structure
 
 ### 1. **C# Fundamentals**
-   - **Course**: [C# Tutorial for Beginners](https://eylearning.udemy.com/course/csharp-tutorial-for-beginners/learn/)
-   - **Contents**:
-     - `Notes.md`: Detailed notes from the course.
-     - `Exercises`: Hands-on coding exercises from the course materials.
-   - **Objective**: Understand the basics of C# programming, covering syntax, OOP principles, and foundational concepts.
+- **Course**: [C# Tutorial for Beginners](https://eylearning.udemy.com/course/csharp-tutorial-for-beginners/learn/)
+- **Contents**:
+    - `CSharpFundamentalsNotes.md`: Detailed notes from the course.
+    - `Exercises`: Hands-on coding exercises from the course materials.
+- **Objective**: Understand the basics of C# programming, covering syntax, OOP principles, and foundational concepts.
 
 ---
 
-### 2. **Kafka with Spring**
-   - **Course**: Kafka and Spring Integration *(Course Link TBD)*
-   - **Contents**:
-     - `Notes.md`: Concepts on event-driven architecture, Kafka producer/consumer patterns, and Spring Boot integration.
-     - `Exercises`: Practical examples and small projects to solidify learning.
-   - **Objective**: Learn how to work with Apache Kafka in a Spring Boot environment and build event-driven microservices.
+### 2. **Apache Kafka Fundamentals**
+- **Course**: [Apache Kafka Fundamentals Accreditation by Confluent](https://www.confluent.io/resources/apache-kafka-fundamentals-accreditation/)
+- **Contents**:
+    - `ApacheKafkaNotes.md`: Notes on Kafka concepts, including producers, consumers, topics, partitions, and brokers.
+    - `ApacheKafkaSummary.md`: Summary of `ApacheKafkaNotes.md`.
+    - `Certificate.pdf`: Proof of completion and accreditation.
+- **Objective**: Master the fundamentals of Apache Kafka, including its architecture, data flow, and practical event streaming applications.
 
 ---
 
 ### 3. **Kotlin with Java**
-   - **Course**: Kotlin for Java Developers *(Course Link TBD)*
-   - **Contents**:
-     - `Notes.md`: Insights on Kotlin syntax, interoperability with Java, and modern programming paradigms.
-     - `Exercises`: Sample programs and practice exercises to explore Kotlin's features.
-   - **Objective**: Gain proficiency in Kotlin and understand its advantages when used alongside Java.
+- **Course**: Kotlin for Java Developers *(Course Link TBD)*
+- **Contents**:
+    - `Notes.md`: Insights on Kotlin syntax, interoperability with Java, and modern programming paradigms.
+    - `Exercises`: Sample programs and practice exercises to explore Kotlin's features.
+- **Objective**: Gain proficiency in Kotlin and understand its advantages when used alongside Java.
 
 ---
 
@@ -43,15 +44,15 @@ Welcome to my learning repository! This repository contains structured notes, ex
 ## 🔖 How to Use This Repository
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/learning-repository.git
+   git clone https://github.com/KobithasanVasantharajah/Learning.git
    ```
 2. **Navigate to a Folder**:
    ```bash
    cd learning-repository/<folder-name>
    ```
 3. **Start Learning**:
-   - Review the `Notes.md` for a topic overview.
-   - Practice with the exercises provided.
+    - Review the `Notes.md` for a topic overview.
+    - Practice with the exercises provided.
 
 ---
 
