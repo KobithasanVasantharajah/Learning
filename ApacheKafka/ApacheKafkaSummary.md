@@ -1,0 +1,61 @@
+# Apache Kafka Summary
+
+- Kafka uses a **subscribe** model for consumers.
+- Load balancing of Kafka clients across multiple brokers is accomplished using **Partitions**.
+- When writing a message with no key to a Kafka topic and using the default partitioner, all messages will be written in a **round-robin** method across **all** partitions of the topic.
+- Kafka is well suited for **batch**, **real time**, and **streaming** types of operations.
+- Benefits of event stream processing over batch processing:
+  - Compute results with low latency in near real-time 
+  - Compute efficiently over large, continuous, unbounded data sets
+- The following technologies can be used to perform event stream processing:
+  -  Apache Kafka Streams 
+  - Confluent KSQL
+- The following use cases would benefit most from continuous event stream processing:
+  - Fraud detection
+  - Context-aware product recommendations for e-commerce
+  - Log monitoring/application fault detection
+- 1,048,588 bytes is the default maximum message size a Kafka broker can receive.
+- The following events will initiate consumer rebalancing:
+  - Consumers joins the consumer group
+  - A consumer leaves the group
+  - Partitions are added to the topic
+- The following actions are undertaken by the controller in case it detects the failure of a broker (which was leader for some partitions):
+  - Controller selects a new leader and updates the ISR list
+  - Controller persists the new leader and ISR list to ZooKeeper
+  - Controller sends the new leader and ISR list changes to all brokers
+- The relationship between topics and partitions is that a topic may have more than one partition.
+- Kafka message Offset numbers are unique within a partition. An offset is a unique identifier assigned to each message within a partition. Offsets are sequential within a partition and help track the order of messages for that specific partition.
+- Messages produced to a Kafka cluster are stored in the form of bytes.
+- The Confluent Schema Registry:
+  - provides a serving layer for your metadata and a RESTful interface for storing and retrieving Avro, Protobuf, or JSON Schema 
+  - provides serializers that plug into Apache Kafka clients, which handle schema storage and retrieval of Kafka messages sent in Avro format. 
+  - reduces the overhead with kafka messages by separating the schema and storing an ID.
+- The following might be essential sources of events in Kafka:
+  - IOT devices
+  - Banking Transactions
+  - Web Logs
+  - Database updates
+- Brokers make up a Kafka cluster. Brokers are networked together and act as a single cluster and could run in:
+  - VM
+  - Containers
+  - Physical Machines
+- Consumer applications can create reports and update dashboards.
+- Kafka uses Apache Zookeeper to manage consensus. Zookeeper acts as a distributed consensus manager. Zookeeper stores information about:
+  - Access Control Lists (ACLs)- for secure access to Kafka resources
+  - Failure detection and recovery- Kafka detect broker failures and coordinate recovery by triggering leader re-election for partitions on failed brokers.
+  - Cluster Management- maintains metadata about the Kafka cluster, such as broker IDs, available topics, and their partitions.
+  - Controllers- elects the Kafka controller (a special broker that manages partition leadership and other administrative tasks) and stores controller-related metadata.
+- The fundamental data structure that kafka uses to store its messages is called a Log. Characteristics of a log:
+  - Can have multiple consumers reading from the log
+  - Logs are immutable
+  - Multiple producers can write to the logs
+- Logs store data. Each event record is written at a particular offset in the log. The default retention period for data in the logs is one week.
+- Timestamps in Kafka messages:
+  - every message has a timestamp
+  - if you don’t have a time stamp, one will be provided for you--you will get message creation time
+- When you produce data to a Kafka cluster, your data will be sent to the broker that is the Leader of Partition.
+- The levels of data, or message, durability provided by Kafka are:
+  - At least once delivery guarantees
+  - Exactly once delivery guarantees
+  - At most once delivery guarantees
+
